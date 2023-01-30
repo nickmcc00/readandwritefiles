@@ -1,11 +1,12 @@
 import csv
 
 
-def main():
-    employee = open("EmployeePay.csv", "r")
-    if employee.mode == "r":
-        bonus = employee.read()
-        print(bonus)
+infile = open("EmployeePay.csv", "r")
 
+csvfile = csv.reader(infile, delimiter=",")
 
-main()
+# next(csvfile)
+
+if infile.mode == "r":
+    pay = infile.read()
+    print(pay)
