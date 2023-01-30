@@ -14,6 +14,6 @@ outfile.write("Customer Name, Customer Country\n")
 for info in csvfile:
     customer_name = info[1] + " " + info[2]
     country = info[4]
-    outfile.write(customer_name + "," + country + "\n")
+    outfile.write(customer_name + ", " + country + "\n")
 
 outfile.close()
