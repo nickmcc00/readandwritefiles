@@ -16,8 +16,12 @@ for sales in csvfile:
     subtotal = float(sales[3])
     tax = float(sales[4])
     freight = float(sales[5])
+
     calc_total = subtotal + tax + freight
-    outfile.write("\t" + str(customer_ID) + "\t" + str(calc_total) + "\n")
+
+    outfile.write(
+        "\t" + str(customer_ID) + "\t" + str(format(calc_total, ">9.2f")) + "\n"
+    )
 
 
 outfile.close()
