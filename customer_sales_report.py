@@ -22,6 +22,7 @@ for sales in csvfile:
     outfile.write(
         "\t" + str(customer_ID) + "\t" + str(format(calc_total, ">9.2f")) + "\n"
     )
+    # if dict['customer_ID'] exists
 
 
 outfile.close()
