@@ -26,8 +26,8 @@ for sales in csvfile:
             list_1.append([cust_ID_1, calc_total])
 
         cust_ID_1 = customer_ID
-
         calc_total = subtotal + tax + freight
+
     else:
         calc_total += subtotal + tax + freight
 
