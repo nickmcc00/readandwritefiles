@@ -8,3 +8,6 @@ csvfile = csv.reader(infile, delimiter=",")
 
 for data in csvfile:
     print(data)
+
+
+infile.close()

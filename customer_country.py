@@ -17,3 +17,4 @@ for info in csvfile:
     outfile.write(customer_name + ", " + country + "\n")
 
 outfile.close()
+infile.close()
